@@ -56,7 +56,7 @@ def load_data():
 df = load_data()
 
 # Dashboard Header
-st.markdown("<h1 style='text-align: center; color: #2E86C1;'>🏢 Data Centers Time Series Dashboard</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2E86C1;'>🏢 US Data Center Tracker</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; color: #5D6D7E; font-size: 1.1em;'>Track and analyze data center growth across different regions over time.</p>", unsafe_allow_html=True)
 st.divider()
 
