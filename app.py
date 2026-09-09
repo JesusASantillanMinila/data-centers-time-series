@@ -41,7 +41,9 @@ def load_data():
             
         df = pd.read_parquet(download_url)
         df['snapshot_date'] = pd.to_datetime(df['snapshot_date'])
-        
+        df = df[df['snapshot_date'] <= pd.Timestamp.today().normalize()]
+
+
         # Create a combined Location Label for the new single filter
         df['location_label'] = df['STATE_NAME'] + " - " + df['COUNTY_NAME']
         
